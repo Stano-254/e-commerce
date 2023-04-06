@@ -1,6 +1,7 @@
 .card-product{
     border: none;
     overflow:hidden;
+    font-family: 'Jost', sans-serif;
 }
 #services img {
     object-fit: cover;
@@ -19,7 +20,29 @@
 }
 
 #services .card-img {
-    height    : 15rem;
+    height    : 8rem;
     overflow: hidden;
     width: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.details_text{
+    font-size:smaller;
+    font-family: 'Jost', sans-serif;
+    font-weight:bolder !important;
+
+}
+.price_text{
+    color: #0b9595;
+    font-family: 'Jost', sans-serif;
+    font-weight:900;
+}
+.rating_price{
+display: flex;
+justify-content: space-between;
+}
+.like-icon{
+    transform: translate(-150%, 0%) !important;
+    color:black;
+    background-color: white;
 }

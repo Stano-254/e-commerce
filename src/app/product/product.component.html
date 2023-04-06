@@ -1,56 +1,109 @@
-<!-- <div class="row row-cols-2 row-cols-md-2 row-cols-xl-2 g-3">
-    <div class="col">
-      <div class="card card-product">
-        <div class="card-img-top p-0 m-0 h-50 >
-            <img csrc="assets/img/black_brown_shirt.png" width="50px" height="200px" class="card-img-top " alt="...">
-        </div>
-        
-        <div class="card-body p-1 m-0">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <div class="container py-5" id="services">
-
-    <div class="row pt-5">
-      <div class="col-md-6">
+  <div class="py-2" id="services">
+    <div class="row row-cols-2 p-0 pt-3">
+      <div class="col-6 p-1">
         <div class="card shadow-sm">
           <div class="card-img">
-          <img src="https://media.istockphoto.com/photos/hot-air-balloons-flying-over-the-botan-canyon-in-turkey-picture-id1297349747?b=1&k=20&m=1297349747&s=170667a&w=0&h=oH31fJty_4xWl_JQ4OIQWZKP8C6ji9Mz7L4XmEnbqRU=" class="img-fluid" alt="...">
+            <span>
+              <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
+              <img src="assets/img/shirt_image.png" class="img-fluid"  height="40%" width="40%" alt="...">
+            </span>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Card Title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-              of the card's content.</p>
+          <div class="card-body pt-2 py-2">
+            <span class="text-muted">Shirt</span>
+            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
+            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
+            <span class="price_text"> $12.00 </span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 p-1">
+        <div class="card shadow-sm bg-transparent">
+          <div class="card-img">
+            <span>
+              <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
+              <img src="assets/img/black_brown_shirt.png" class="img-fluid"  height="40%" width="40%" alt="...">
+            </span>
+          </div>
+          <div class="card-body pt-2 py-2 bg-transparent ">
+            <span class="text-muted">Shirt</span>
+            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
+            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
+            <span class="price_text"> $18.00 </span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-2 p-0 pt-3">
+      <div class="col-6 p-1">
+        <div class="card shadow-sm">
+          <div class="card-img position-relative">
+            <span>
+              <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
+              <img src="assets/img/material_shirt.jpg" class="img-fluid"  height="40%" width="40%" alt="...">
+            </span>
+          </div>
+          <div class="card-body pt-2 py-2">
+            <span class="text-muted">Shirt</span>
+            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
+            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
+            <span class="price_text"> $32.00 </span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 p-1">
+        <div class="card shadow-sm bg-transparent">
+          <div class="card-img position-relative">
+            <span>
+              <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
+              <img src="assets/img/jungle_green_stripes_shirt.jpg" class="img-fluid"  height="40%" width="40%" alt="...">
+            </span>
+          </div>
+          <div class="card-body pt-2 py-2 bg-transparent ">
+            <span class="text-muted">Shirt</span>
+            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
+            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
+            <span class="price_text"> $22.00 </span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-2 p-0 pt-3">
+      <div class="col-6 p-1">
+        <div class="card shadow-sm">
+          <div class="card-img position-relative">
+            <span>
+              <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
+              <img src="assets/img/black_brown_shirt.png" class="img-fluid"  height="40%" width="40%" alt="...">
+              </span>
+          </div>
+          <div class="card-body pt-2 py-2">
+            <span class="text-muted">Shirt</span>
+            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
+            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
+            <span class="price_text"> $18.00 </span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 p-1">
+        <div class="card shadow-sm bg-transparent">
+          <div class="card-img position-relative">
+            <span>
+              <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
+          <img src="assets/img/shirt_image.png" class="img-fluid"  height="40%" width="40%" alt="...">
+        </span>
+        
+          </div>
+          <div class="card-body pt-2 py-2 bg-transparent ">
+            <span class="text-muted">Shirt</span>
+            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
+            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
+            <span class="price_text"> $12.00</span>
+          </div>
           </div>
         </div>
       </div>
