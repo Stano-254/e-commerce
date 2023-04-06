@@ -1,0 +1,35 @@
+<div class="cointainer-fluid ">
+    <div class="top-nav">
+        <div class="row m-3">
+            <div class="col-9">
+                <app-search></app-search>
+            </div>
+            <div class="col-3 notification">
+                <div class="row">
+                    <div class="col-6">
+                        <span class="h3 position-relative"><fa-icon [icon]="['fas', 'bucket']"></fa-icon>
+                            <span class="x-small position-absolute top-0 start-100 translate-middle badge  bg-danger">
+                             1
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-6">
+                        <span class="h3 position-relative ml-2 mr-2"><fa-icon [icon]="['far', 'message']"></fa-icon>
+                            <span class="x-small position-absolute top-0 start-100 translate-middle badge  bg-danger">
+                            9+
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="product-couresul">
+        <p>carausel</p>
+        <!-- <ngbd-carousel-config></ngbd-carousel-config> -->
+    </div>
+    <div class="product-display m-4">
+        <app-product></app-product>
+    </div>
+</div>

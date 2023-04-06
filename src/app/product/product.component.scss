@@ -1,0 +1,25 @@
+.card-product{
+    border: none;
+    overflow:hidden;
+}
+#services img {
+    object-fit: cover;
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+#services .card {
+    border:none;
+    overflow: hidden;
+    padding : 0px 0px;
+}
+
+#services img:hover {
+    transform: scale(1.1);
+}
+
+#services .card-img {
+    height    : 15rem;
+    overflow: hidden;
+    width: 100%;
+}
