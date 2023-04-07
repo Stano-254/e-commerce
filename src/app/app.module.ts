@@ -3,24 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FontAwesomeModule, FaIconLibrary} from '@fortawesome/angular-fontawesome';
-import { faSquare, faCheckSquare, faMagnifyingGlass, faBucket, faStar} from '@fortawesome/free-solid-svg-icons';
-import {
-  faSquare as farSquare,
-  faCheckSquare as farCheckSquare,
-  faMessage,
-  faHeart,
-} from '@fortawesome/free-regular-svg-icons';
-import {
-  faStackOverflow,
-  faGithub,
-  faMedium,
-} from '@fortawesome/free-brands-svg-icons';
+import {faMagnifyingGlass, faBucket, faStar, faGrip, faPlaneUp, faClipboardList, faGlobe, faCircleDollarToSlot, faStore} from '@fortawesome/free-solid-svg-icons';
+import { faMessage,faHeart} from '@fortawesome/free-regular-svg-icons';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SearchComponent } from './search/search.component';
 import { NgbdCarouselConfig } from './carousel/carousel-config';
 import { ProductComponent } from './product/product.component';
+import { AddonservicesComponent } from './addonservices/addonservices.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +20,8 @@ import { ProductComponent } from './product/product.component';
     DashboardComponent,
     SearchComponent,
     ProductComponent,
+    AddonservicesComponent,
+    ProductdetailsComponent,
    
     
   ],
@@ -49,7 +43,12 @@ export class AppModule {
           faMessage,
           faStar,
           faHeart,
-          
+          faPlaneUp,
+          faGrip,
+          faClipboardList,
+          faGlobe,
+          faCircleDollarToSlot,
+          faStore
 
 
     );

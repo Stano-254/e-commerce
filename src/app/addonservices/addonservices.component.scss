@@ -1,0 +1,38 @@
+.otherservices{
+    background-color: white;
+    height: 80px;
+    padding: 10px;
+    
+   
+}
+#services-nav{
+    display: flex;
+    justify-content: space-between;
+}
+#services-nav .card{
+    background-color: rgba(229, 226, 226, 0.759) !important;
+    border: none;
+    width: 50px;
+ 
+}
+#services-nav .icon-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.service-icon{
+    align-content: center;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+   color:rgba(0, 0, 0, 0.626);
+    
+}
+.icon-container p {
+    font-family: 'Jost', sans-serif;
+    font-size: x-small;
+    font-weight: 800;
+}

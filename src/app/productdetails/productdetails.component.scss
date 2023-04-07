@@ -1,0 +1,93 @@
+.card-product{
+    border: none;
+    overflow:hidden;
+    font-family: 'Jost', sans-serif;
+}
+#services img {
+    object-fit: cover;
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+#services .card {
+    border:none;
+    overflow: hidden;
+    padding : 0px 0px;
+}
+
+#services img:hover {
+    transform: scale(1.1);
+}
+
+#services .card-img {
+    height :25rem;
+    overflow:hidden;
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.details_text{
+    font-size:smaller;
+    font-family: 'Jost', sans-serif;
+    font-weight:bolder !important;
+
+}
+.price_text{
+    color: #0b9595;
+    font-family: 'Jost', sans-serif;
+    font-weight:900;
+}
+.rating_price{
+display: flex;
+justify-content: space-around;
+}
+.like-icon{
+    transform: translate(-150%, 0%) !important;
+    color:black;
+    background-color: white;
+}
+.side-img{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    // overflow:hidden;
+    margin-right: 50px !important;
+}
+.side-img img{
+    object-fit:fill !important;
+    height :40px !important;
+    width: 40px !important;
+    overflow:hidden;
+    align-self: center;
+
+}
+.preview{
+    align-self: center;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+    border:1px solid #e7ebeb;
+    overflow: hidden;
+    
+}
+.shirt-details{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.rating_list{
+    display: flex;
+    justify-content: space-around;
+
+}
+.rating_list li{
+    float:left;
+    padding-right: 10px;
+    margin-right:10px;
+    margin-left:10px;
+}

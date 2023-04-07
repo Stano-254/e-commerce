@@ -1,6 +1,6 @@
 .dashboard{
   background-color: rgba(220, 220, 220, 0.919);
-  
+
 }
 
 .top-nav{
@@ -17,4 +17,11 @@
   .notification{
     justify-content:flex-start;
     display: flex;
+  }
+  .bestseller-banner{
+    display: flex;
+    justify-content: space-between !important;
+  }
+  .bestseller-banner p {
+    text-align: end;
   }
