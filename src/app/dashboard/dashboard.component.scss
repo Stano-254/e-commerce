@@ -25,3 +25,33 @@
   .bestseller-banner p {
     text-align: end;
   }
+
+  #main-nav{
+    display: flex;
+    justify-content: space-between;
+}
+#main-nav .card{
+    border: none;
+    width: 50px;
+ 
+}
+#main-nav .icon-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.service-icon{
+    align-content: center;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+.icon-container p {
+    font-family: 'Jost', sans-serif;
+    font-size: small;
+    font-weight: 800;
+}

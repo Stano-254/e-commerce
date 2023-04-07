@@ -26,7 +26,18 @@
         </div>
     </div>
     <div class="product-couresul">
-        <img src="assets/img/large_display.png"  class="img-fluid">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="img-fluid img-dark" src="assets/img/large_display.png" alt="slide">
+              <div class="cointainer-fluid" style="background-color: rgba(0, 0, 0, 0.677);">
+                <div class="carousel-caption text-left" style="left: 3;text-align: left;">
+                  <h1 class="display-1 text-black ">80% OFF</h1>
+                  <p class="text-black text-xl">discover fashion that suits to your style</p>
+                  <p><a class="btn btn-lg btn-secondary" href="#" role="button">Check this out</a></p>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
     <div>
         <app-addonservices></app-addonservices>
@@ -39,8 +50,36 @@
         </div>
         <app-product></app-product>
     </div>
-    <div>
-        <!-- test -->
+    <div class="navigation fixed-bottom  bg-light pt-2 px-4 br-8" >
+
+        <div class="d-flex justify-content-between" id="main-nav">
+            <div class="icon-container justify-content-center">
+                <div class="card bg-light">
+                    <span class="service-icon"><fa-icon [icon]="['fas', 'home']" style="color:#0b9595"></fa-icon></span>
+                </div>
+                <p class="text-center text-muted">Home</p>
+            </div>
+            <div class="icon-container">
+                <div class="card bg-light">
+                    <span class="service-icon "><fa-icon [icon]="['fas', 'ticket']"></fa-icon></span>
+                </div>
+                <p class="text-center text-muted">Voucher</p>
+            </div>
+            <div class="icon-container">
+                <div class="card bg-light">
+                    <span class="service-icon "><fa-icon [icon]="['fas', 'wallet']"></fa-icon></span>
+                </div>
+                <p class="text-center text-muted">Wallet</p>
+            </div>
+            <div class="icon-container">
+                <div class="card bg-light">
+                    <span class="service-icon "><fa-icon [icon]="['fas', 'gear']"></fa-icon></span>
+                </div>
+                <p class="text-center text-muted">Setting</p>
+            </div>
+            
+           
+        </div>
         
     </div>
 </div>

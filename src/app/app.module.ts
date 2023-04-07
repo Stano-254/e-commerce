@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module'
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FontAwesomeModule, FaIconLibrary} from '@fortawesome/angular-fontawesome';
-import {faMagnifyingGlass, faBucket, faStar, faGrip, faPlaneUp, faClipboardList, faGlobe, faCircleDollarToSlot, faStore} from '@fortawesome/free-solid-svg-icons';
+import {faMagnifyingGlass, faBucket, faStar, faGrip, faPlaneUp, faClipboardList, faGlobe, faCircleDollarToSlot, faStore, faHouse, faTicket, faWallet, faGear} from '@fortawesome/free-solid-svg-icons';
 import { faMessage,faHeart} from '@fortawesome/free-regular-svg-icons';
 
 import { AppComponent } from './app.component';
@@ -50,7 +50,9 @@ export class AppModule {
           faClipboardList,
           faGlobe,
           faCircleDollarToSlot,
-          faStore
+          faStore,
+          faHouse,
+          faTicket,faWallet,faGear
 
 
     );
