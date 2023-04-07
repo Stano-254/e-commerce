@@ -1,52 +1,110 @@
-<div class="card mb-3 m-2" >
-    <div class="row row-cols-2 g-0">
-      <div class="col-2 shirt-details bg-light ">
-        <div class="preview mt-3">
-            <img src="assets/img/brown_shirt_back.png" class="img-fluid rounded-start" width="50px" alt="...">
+<div class="product-details-wrapper cointainer-fluid">
+  <div class="product-details top nav"></div>
+  <div class="card mb-3 m-2" >
+      <div class="row row-cols-2 g-0">
+        <div class="col-2 shirt-details bg-light ">
+          <div class="preview mt-3">
+              <img src="assets/img/brown_shirt_back.png" class="img-fluid rounded-start" width="50px" alt="...">
+          </div>
+          <div class="preview mt-3">
+              <img src="assets/img/brown_shirt_hands.png" class="img-fluid rounded-start" width="50px" alt="...">
+          </div>
+          <div class="preview mt-3">
+              <img src="assets/img/brown_shirt_buttons.png" class="img-fluid rounded-start" width="50px" alt="...">
+          </div>
+          <div class="preview mt-3">
+              <img src="assets/img/brown_shirt_pocket.png" class="img-fluid rounded-start" width="50px" alt="...">
+          </div>
+        
         </div>
-        <div class="preview mt-3">
-            <img src="assets/img/brown_shirt_hands.png" class="img-fluid rounded-start" width="50px" alt="...">
+        <div class="col-8 card-body p-0">
+          <div class="card-img">
+              <img src="assets/img/black_brown_shirt.png" class="img-fluid rounded-start" alt="...">
+          </div>
+        
         </div>
-        <div class="preview mt-3">
-            <img src="assets/img/brown_shirt_buttons.png" class="img-fluid rounded-start" width="50px" alt="...">
+        <div class="card-body pt-2 py-1">
+          <span class="text-muted"><fa-icon [icon]="['fas', 'store']" class="text-muted"></fa-icon> tokobaju.id</span>
+          <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
+          <div class="rating_price d-flex">
+              <span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 Ratings </span>
+              <span><ul class="text-muted rating_list details_text"><li>2.3k+ Reviews</li><li> 2.9k+ Sold</li></ul> </span>
         </div>
-        <div class="preview mt-3">
-            <img src="assets/img/brown_shirt_pocket.png" class="img-fluid rounded-start" width="50px" alt="...">
+        <ul class="nav nav-tabs" id="aboutTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">About Item</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Reviews</button>
+          </li>
+        
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="container pt-2">
+                <div class="row row-cols-2 d-flex justify-content-between">
+                  <p class="col-6 about_item"><span class="text-muted">Brand: &nbsp;</span><b>chArmkpR</b></p>
+                  <p class="col-6 about_item"><span class="text-muted">Color: &nbsp;</span><b>Aprikot</b></p>
+                </div>
+                <div class="row row-cols-2 d-flex justify-content-between">
+                  <p class="col-6 about_item"><span class="text-muted">Category: &nbsp;</span><b>Casual Shirt</b></p>
+                  <p class="col-6 about_item"><span class="text-muted">Material: &nbsp;</span><b>Polyester</b></p>
+                </div>
+                <div class="row row-cols-2 d-flex justify-content-between">
+                  <p class="col-6 about_item"><span class="text-muted">Condition: &nbsp;</span><b>New</b></p>
+                  <p class="col-6 about_item"><span class="text-muted">Material: &nbsp;</span><b>200g</b></p>
+                </div>
+                <hr>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item accordion-less-more " (click)="toggle_view()">
+                    
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <h6>Description:</h6>
+                        <ul class="text-muted">
+                          <li> Long-sleeve dress shirt in classic fit featuring button- down collar</li>
+                          <li> Patch Pocket on Left Chest</li>
+                          <li> Durable Combination Cotton Fabric</li>
+                          <li>  Comfortable and quality dress shirt</li>
+                          <li>Go To Classic button down shirt for all special occasions</li>
+                        </ul>
+                        <p class="text-muted">
+                        Chat us if there is anything you need to ask about the product :)
+                      </p>
+                      </div>
+                    </div>
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <span class="collapse {{view}}">See more</span>
+                      <span class="collapse {{no_view}}">See less</span>  
+                      </button>
+                    </h2>
+                  </div>
+                  
+                  </div>
+            
+              </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <p>profile tab</p>
+          </div>
         </div>
-       
-      </div>
-      <div class="col-8 card-body p-0">
-        <div class="card-img">
-            <img src="assets/img/black_brown_shirt.png" class="img-fluid rounded-start" alt="...">
-        </div>
-       
-      </div>
-      <div class="card-body pt-2 py-2">
-        <span class="text-muted"><fa-icon [icon]="['fas', 'store']" class="text-muted"></fa-icon> tokobaju.id</span>
-        <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
-        <div class="rating_price d-flex">
-            <span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 Ratings </span>
-            <span><ul class="text-muted rating_list details_text"><li>2.3k+ Reviews</li><li> 2.9k+ Sold</li></ul> </span>
-      </div>
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-        </li>
-       
-      </ul>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <p>test tab for user cases</p>
-        </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <p>profile tab</p>
+        
+
         </div>
       </div>
       
-
-      </div>
     </div>
+    <div class="bg-light d-flex justify-content-between px-4 pt-2 fixed-bottom">
+        <div class="col-6">
+          <p class="text-muted">Total Price <br>
+            <b class="price_text h3">$18.00</b>
+          </p>
+        </div>
+        <div class="btn-group m-2 col-6" role="group" aria-label="buy now">
+          <button type="button" class="btn btn-success px-3"><span><fa-icon [icon]="['fas', 'bucket']"></fa-icon> 1</span></button>
+          <button type="button" class="btn btn-secondary text-white px-3">Buy Now</button>
+        </div>
   </div>
+    
+</div>

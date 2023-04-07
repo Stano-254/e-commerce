@@ -1,12 +1,19 @@
 .search-icon{
-    margin-right: -20px;
+    margin-right: -25px;
     z-index: 100;
-    margin-top: 8px;
+    margin-top: 12px;
+    color: #8c7c7c;
   }
+  
   .search{
-    text-align:start;
+    text-align:flex-start;
     padding-left:40px;
     border-radius: 8px !important;
+    height: 50px;
+    background-color: #dedede !important;
+  }
+  .search:focus{
+    transition:.15s ease-in-out,box-shadow 1 .15s ease-in-out;
   }
   .badge{
     font-size: x-small !important;

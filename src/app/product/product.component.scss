@@ -46,3 +46,17 @@ justify-content: space-between;
     color:black;
     background-color: white;
 }
+.products{
+    display: flex !important;
+    flex-direction: row !important;
+    // font-size: 30px;
+    // text-align: center;
+}
+.flex-item{
+    flex: 50% !important;
+}
+@media (max-width: 360px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }

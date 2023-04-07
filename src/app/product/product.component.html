@@ -1,111 +1,23 @@
   <div class="py-2" id="services">
-    <div class="row row-cols-2 p-0 pt-3">
-      <div class="col-6 p-1">
+   
+    <div class="row p-0 pt-3 products">
+      <div class="p-1 flex-item" *ngFor="let product of products">
         <div class="card shadow-sm">
           <div class="card-img">
             <span>
               <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
-              <img src="assets/img/shirt_image.png" class="img-fluid"  height="40%" width="40%" alt="...">
+              <img src="{{product['image']}}" class="img-fluid"  height="40%" width="40%" alt="...">
             </span>
           </div>
           <div class="card-body pt-2 py-2">
             <span class="text-muted">Shirt</span>
-            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
-            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
-            <span class="price_text"> $12.00 </span>
+            <p class="details_text"><b>{{product['desc']}}</b></p>
+            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> {{product['rating']}} | {{product['reviews']}}</span>
+            <span class="price_text"> ${{product['price']}} </span>
           </div>
           </div>
-        </div>
-      </div>
-      <div class="col-6 p-1">
-        <div class="card shadow-sm bg-transparent">
-          <div class="card-img">
-            <span>
-              <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
-              <img src="assets/img/black_brown_shirt.png" class="img-fluid"  height="40%" width="40%" alt="...">
-            </span>
-          </div>
-          <div class="card-body pt-2 py-2 bg-transparent ">
-            <span class="text-muted">Shirt</span>
-            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
-            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
-            <span class="price_text"> $18.00 </span>
-          </div>
-          </div>
-        </div>
       </div>
     </div>
-    <div class="row row-cols-2 p-0 pt-3">
-      <div class="col-6 p-1">
-        <div class="card shadow-sm">
-          <div class="card-img position-relative">
-            <span>
-              <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
-              <img src="assets/img/material_shirt.jpg" class="img-fluid"  height="40%" width="40%" alt="...">
-            </span>
-          </div>
-          <div class="card-body pt-2 py-2">
-            <span class="text-muted">Shirt</span>
-            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
-            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
-            <span class="price_text"> $32.00 </span>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 p-1">
-        <div class="card shadow-sm bg-transparent">
-          <div class="card-img position-relative">
-            <span>
-              <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
-              <img src="assets/img/jungle_green_stripes_shirt.jpg" class="img-fluid"  height="40%" width="40%" alt="...">
-            </span>
-          </div>
-          <div class="card-body pt-2 py-2 bg-transparent ">
-            <span class="text-muted">Shirt</span>
-            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
-            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
-            <span class="price_text"> $22.00 </span>
-          </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="row row-cols-2 p-0 pt-3">
-      <div class="col-6 p-1">
-        <div class="card shadow-sm">
-          <div class="card-img position-relative">
-            <span>
-              <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
-              <img src="assets/img/black_brown_shirt.png" class="img-fluid"  height="40%" width="40%" alt="...">
-              </span>
-          </div>
-          <div class="card-body pt-2 py-2">
-            <span class="text-muted">Shirt</span>
-            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
-            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
-            <span class="price_text"> $18.00 </span>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 p-1">
-        <div class="card shadow-sm bg-transparent">
-          <div class="card-img position-relative">
-            <span>
-              <fa-icon [icon]="['far', 'heart']" class="pr-2 mr-2 x-small position-absolute top-0 start-100 like-icon bg-transparent"></fa-icon>
-          <img src="assets/img/shirt_image.png" class="img-fluid"  height="40%" width="40%" alt="...">
-        </span>
-        
-          </div>
-          <div class="card-body pt-2 py-2 bg-transparent ">
-            <span class="text-muted">Shirt</span>
-            <p class="details_text"><b>Essentials Men's Short-Sleeve Crewneck T-Shirt</b></p>
-            <div class="rating_price d-flex"><span class="text-muted details_text"><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon> 4.9 | 2356</span>
-            <span class="price_text"> $12.00</span>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    
+  
