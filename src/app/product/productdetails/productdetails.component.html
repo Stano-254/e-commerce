@@ -32,15 +32,15 @@
         </div>
         <ul class="nav nav-tabs" id="aboutTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">About Item</button>
+            <button class="nav-link active " id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true">About Item</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Reviews</button>
+            <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">Reviews</button>
           </li>
         
         </ul>
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
               <div class="container pt-2">
                 <div class="row row-cols-2 d-flex justify-content-between">
                   <p class="col-6 about_item"><span class="text-muted">Brand: &nbsp;</span><b>chArmkpR</b></p>
@@ -85,8 +85,30 @@
             
               </div>
           </div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <p>profile tab</p>
+          <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+            <div class="d-block m-2 ">
+              <h1>Reviews & Ratings</h1>
+              <div class="row">
+                <div class="col-6 ">
+                  <p><span class="display-4">4.9</span><span class="text-muted text-sm">/50</span></p>
+                  <fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>
+                  <fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>
+                  <fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>
+                  <fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>
+                  <fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>
+                </div>
+                <div class="col-6">
+                  <p><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>&nbsp;5</p>
+                  <p><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>&nbsp;4</p>
+                  <p><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>&nbsp;3</p>
+                  <p><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>&nbsp;2</p>
+                  <p><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>&nbsp;1</p>
+                  
+                </div>
+        
+              </div>
+        
+            </div>
           </div>
         </div>
         
@@ -95,7 +117,57 @@
       </div>
       
     </div>
-    <div class="bg-light d-flex justify-content-between px-4 pt-2 fixed-bottom">
+    <div>
+    <div class="d-block px-3 m-2 ">
+      <h1>Shipping Information</h1>
+      <p><span class="text-muted"> Delivery: &nbsp;&nbsp;</span> <b>Shipping from Jakarta, Indonesia</b></p>
+      <p><span class="text-muted"> Shipping:&nbsp;&nbsp;</span><b>Free International Shipping</b> </p>
+      <p><span class="text-muted"> Arrive: &nbsp;&nbsp;</span><b>Estimated arrival on 25 - 27 Oct 2022</b> </p>
+
+    </div>
+    <hr class="mx-3">
+    <div class="d-block px-3 m-2 ">
+      <h1>Seller Information </h1>
+      <div class="d-flex row">
+        <div class="col-2">
+        <img src="assets/img/backgrou.jpg" class="img-fluid rounded-circle bg-light " width="150px" height="150px" alt="Thifting store">
+        </div>
+        <div class="col-10">
+        <h2 class="h4">Thrifting_Store</h2>
+        <p><span class="text-muted">Active 5 Mins ago | 96.7% Positive Feedback</span></p>
+        <button class="btn text-success border-success" ><fa-icon [icon]="['fas', 'store']" class="text-success"></fa-icon>&nbsp; View Store</button>
+      </div>
+
+      </div>
+        
+
+    </div>
+    <hr class="mx-3">
+    <div class="d-block m-2 " style="margin-bottom: 80px;">
+      <h1>Reviews & Ratings</h1>
+      <div class="row">
+        <div class="col-6 ">
+          <p><span class="display-4">4.9</span><span class="text-muted text-sm">/50</span></p>
+          <fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>
+          <fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>
+          <fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>
+          <fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>
+          <fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>
+        </div>
+        <div class="col-6">
+          <p><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>&nbsp;5</p>
+          <p><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>&nbsp;4</p>
+          <p><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>&nbsp;3</p>
+          <p><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>&nbsp;2</p>
+          <p><fa-icon [icon]="['fas', 'star']" class="text-warning"></fa-icon>&nbsp;1</p>
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="bg-light d-flex justify-content-between px-4 pt-2 fixed-bottom"> 
         <div class="col-6">
           <p class="text-muted">Total Price <br>
             <b class="price_text h3">$18.00</b>
@@ -106,5 +178,6 @@
           <button type="button" class="btn btn-secondary text-white px-3">Buy Now</button>
         </div>
   </div>
+</div>
     
 </div>

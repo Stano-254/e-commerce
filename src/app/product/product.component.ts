@@ -16,5 +16,7 @@ export class ProductComponent {
     {"desc":"Essentials Men's Short-Sleeve Crewneck T-Shirt","image":"assets/img/shirt_image.png","price":12.00,"rating":4.9, 'reviews':2356},
   ]
 
-
+  view_product_details(product:any){
+    console.log(product)
+  }
 }

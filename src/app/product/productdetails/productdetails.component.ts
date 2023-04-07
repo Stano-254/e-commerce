@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-productdetails',
@@ -8,10 +9,19 @@ import { Component } from '@angular/core';
 export class ProductdetailsComponent {
    view = "show"
    no_view = ""
+   product :any
 
-  constructor(){
+constructor(
+  private route: ActivatedRoute,
+){
 
-  }
+}
+
+ngOnInit() {
+  this.route.queryParams.subscribe(params => {
+    this.product = params['product'];
+  });
+}
   toggle_view(){
     if(this.view==''){
       this.view="show"

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module'
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FontAwesomeModule, FaIconLibrary} from '@fortawesome/angular-fontawesome';
@@ -12,7 +13,7 @@ import { SearchComponent } from './search/search.component';
 import { NgbdCarouselConfig } from './carousel/carousel-config';
 import { ProductComponent } from './product/product.component';
 import { AddonservicesComponent } from './addonservices/addonservices.component';
-import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { ProductdetailsComponent } from './product/productdetails/productdetails.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
     NgbdCarouselConfig,
