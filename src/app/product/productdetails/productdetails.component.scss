@@ -140,4 +140,11 @@ button:focus:not(:focus-visible) {
 .accordion-less-more button{
     box-shadow: none !important;
     color: #166f73 !important;
+
+}
+.product_detail_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 0 0 rgb(245, 242, 242);
 }

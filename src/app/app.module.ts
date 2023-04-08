@@ -4,8 +4,8 @@ import { AppRoutingModule } from './app-routing.module'
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FontAwesomeModule, FaIconLibrary} from '@fortawesome/angular-fontawesome';
-import {faMagnifyingGlass, faBucket, faStar, faGrip, faPlaneUp, faClipboardList, faGlobe, faCircleDollarToSlot, faStore, faHouse, faTicket, faWallet, faGear} from '@fortawesome/free-solid-svg-icons';
-import { faMessage,faHeart} from '@fortawesome/free-regular-svg-icons';
+import {faMagnifyingGlass, faBucket, faStar, faGrip,faHeart, faPlaneUp, faClipboardList, faGlobe, faCircleDollarToSlot, faStore, faHouse, faTicket, faWallet, faGear, faAngleLeft, faShareNodes} from '@fortawesome/free-solid-svg-icons';
+import { faMessage} from '@fortawesome/free-regular-svg-icons';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -40,19 +40,13 @@ import { ProductdetailsComponent } from './product/productdetails/productdetails
 export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIcons(
-          faMagnifyingGlass,
-          faBucket,
-          faMessage,
-          faStar,
-          faHeart,
-          faPlaneUp,
-          faGrip,
-          faClipboardList,
-          faGlobe,
-          faCircleDollarToSlot,
-          faStore,
-          faHouse,
-          faTicket,faWallet,faGear
+          faMagnifyingGlass,faBucket,
+          faMessage,faStar, faHeart,faHeart,
+          faPlaneUp,faGrip,faClipboardList,
+          faGlobe,faCircleDollarToSlot,
+          faStore,faHouse,faAngleLeft,
+          faTicket,faWallet,faGear,
+          faShareNodes,
 
 
     );
